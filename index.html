@@ -65,7 +65,7 @@ img { width:90%; max-width:380px; border-radius:20px; margin:12px; box-shadow:0 
 function checkPass(){
   var input = document.getElementById('passInput').value.trim();
   var secret = atob("MTgxMDIwMTE="); // 18102011 مشفر
-  if(input === secret || input === "18-10-2011" || input === "18/10/2011"){
+  if(input === secret || input === "18-10-2012" || input === "18/10/2011"){
     document.getElementById('lockScreen').style.display='none';
     document.getElementById('mainContent').style.display='block';
     document.getElementById('mySong').play().catch(()=>{});
